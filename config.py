@@ -26,8 +26,18 @@ class Config(object):
     # 指定session的过期时间1天
     PERMANENT_SESSION_LIFETIME = 86400
 
+# 开发模式
+class developmentConfig(Config):
+    DEBUG = True
+
+class productionConfig(Config):
+    DEBUG = False
 
 
+config = {
+    'development': developmentConfig,
+    'production': productionConfig
+}
 
 
 
