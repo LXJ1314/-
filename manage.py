@@ -4,6 +4,8 @@ from flask_script import Manager
 # 导入扩展flask-migrate
 from flask_migrate import Migrate, MigrateCommand
 from info import create_app, db
+# 导入模型类
+from info import models
 
 app = create_app("development")
 
@@ -23,3 +25,21 @@ def hello_world():
 
 if __name__ == '__main__':
     manage.run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
